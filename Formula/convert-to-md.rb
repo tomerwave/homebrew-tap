@@ -5,41 +5,41 @@
 class ConvertToMd < Formula
   desc "Convert webpages to Markdown from your terminal."
   homepage "https://github.com/tomerwave/convert-to.md"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.2/convert-to-md_0.2.2_Darwin_x86_64"
-      sha256 "816983c49ccbc6b83e529dda2ca96ac6c44410629d61d446a195a45b68eb9342"
+      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.3/convert-to-md_0.2.3_Darwin_x86_64"
+      sha256 "11198bf0eb8a5a5320eaf49f1aa3ad02a5fe8e649bc131726de1907efb264480"
 
       define_method(:install) do
-        bin.install "convert-to-md_0.2.2_Darwin_x86_64" => "convert-to-md"
+        bin.install "convert-to-md_0.2.3_Darwin_x86_64" => "convert-to-md"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.2/convert-to-md_0.2.2_Darwin_arm64"
-      sha256 "2597a789908d21b996e03e2c7dcc2056a81d1d91551ad8879568805276769016"
+      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.3/convert-to-md_0.2.3_Darwin_arm64"
+      sha256 "27950cb7d11c637451673b84020d47c219789fe31ea6b75903c0ec8c9547adf1"
 
       define_method(:install) do
-        bin.install "convert-to-md_0.2.2_Darwin_arm64" => "convert-to-md"
+        bin.install "convert-to-md_0.2.3_Darwin_arm64" => "convert-to-md"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.2/convert-to-md_0.2.2_Linux_x86_64"
-      sha256 "8a98488c0d91c501c3678a4978bfd75ae1cb015bfdecbb70db5232dd1a2a5e92"
+      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.3/convert-to-md_0.2.3_Linux_x86_64"
+      sha256 "28ac2c972eb8fee71a2513176747c69346f3f70df0ffc4c7797f040868261aa2"
       define_method(:install) do
-        bin.install "convert-to-md_0.2.2_Linux_x86_64" => "convert-to-md"
+        bin.install "convert-to-md_0.2.3_Linux_x86_64" => "convert-to-md"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.2/convert-to-md_0.2.2_Linux_arm64"
-      sha256 "8dce1ac936522cb8955e58f678de45a0bea12c6e69d62451f3fccbb7c1f57830"
+      url "https://github.com/tomerwave/homebrew-tap/releases/download/v0.2.3/convert-to-md_0.2.3_Linux_arm64"
+      sha256 "abe24b40c212c70f74fc414a710d635dbeb50594c498c6295feeb8fdb1473481"
       define_method(:install) do
-        bin.install "convert-to-md_0.2.2_Linux_arm64" => "convert-to-md"
+        bin.install "convert-to-md_0.2.3_Linux_arm64" => "convert-to-md"
       end
     end
   end
